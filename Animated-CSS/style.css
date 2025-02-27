@@ -1,0 +1,79 @@
+:root{
+  --widthStroke: 60;
+  --fillDark: black;
+  --fillHover: hsl(48, 94%, 24%);
+  --filLight: rgb(245, 242, 242);
+  --strokeWidth: 0.3px;
+
+}
+
+
+body{
+    background-color: rgb(163, 154, 211);
+}
+ /** ICON MAPA PERU dark */
+  #mapa{
+    stroke-width: var(--strokeWidth);
+    stroke-dasharray: var(--widthStroke); /* Longitud del trazo */
+    stroke-dashoffset: var(--widthStroke); /* Oculta el trazo */
+    animation: draw 5s linear infinite;
+    transition: fill, 0.5s ease-out;
+    fill: var(--fillDark);
+  }
+  .sol {
+        fill: var(--fillDark) ;
+        stroke-width: var(--strokeWidth);
+        stroke-dasharray: var(--widthStroke); /* Longitud del trazo */
+    stroke-dashoffset: var(--widthStroke); 
+      transform-box: fill-box; /* Asegura que transform se aplique correctamente */
+      transform-origin: center; /* Asegura que el escalado sea desde el centro */
+      animation: draw 5s linear infinite, pulse 1.5s infinite 5s; /* Agrega delay de 5s */
+  }
+
+  svg:hover #mapa, svg:hover .sol {
+    fill: var(--fillHover); /* Cambia a un amarillo brillante */
+  }
+
+ /** ICON MAPA PERU light */
+  #mapaLight{
+    stroke-dasharray: var(--widthStroke); /* Longitud del trazo */
+    stroke-dashoffset: var(--widthStroke); /* Oculta el trazo */
+    transition: fill 0.5s ease-out;
+    fill: var(--filLight);
+    stroke-width: var(--strokeWidth);
+    animation: draw 5s linear infinite;
+  }
+  .solLight {
+        fill: var(--filLight) ;
+        stroke-width: var(--strokeWidth);
+        stroke-dasharray: var(--widthStroke); /* Longitud del trazo */
+    stroke-dashoffset: var(--widthStroke); 
+      transform-box: fill-box; /* Asegura que transform se aplique correctamente */
+      transform-origin: center; /* Asegura que el escalado sea desde el centro */
+      animation: draw 5s linear infinite, pulse 1.5s infinite 5s; /* Agrega delay de 5s */
+  }
+
+  svg:hover #mapaLight, svg:hover .solLight {
+    fill: var(--fillHover); /* Cambia a un amarillo brillante */
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+    
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  
+ 
+  
+
+  
+ 
+  
+  

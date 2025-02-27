@@ -1,0 +1,25 @@
+📌 Pack de Iconos Animados - Fintech Perú
+
+Gracias por adquirir este pack de 50 iconos SVG animados con CSS. Están diseñados para mejorar la interfaz de aplicaciones fintech, startups y plataformas financieras.
+
+📂 **Contenido del Pack**
+- 50 archivos .SVG individuales
+- Archivo styles.css con animaciones
+- PNGs de cada icono
+- Demo en HTML (index.html)
+- Archivo LICENSE.txt
+
+📖 **Cómo Usar**
+1. **Incluir en tu proyecto:** 
+   - Copia los archivos `.svg` y agrégalos en tu código HTML.
+   - Añade `<link rel="stylesheet" href="styles.css">` en tu HTML.
+
+2. **Personalizar colores y estilos:**  
+   - Modifica los atributos `fill`, `stroke` y `animation` en `styles.css`.
+
+⚠ **Soporte**  
+Si tienes dudas, puedes contactarme en:  
+📧 Email: tuemail@gmail.com  
+📍 Web: [Gumroad Store](https://gumroad.com/tuusuario)
+
+📢 Si te gustó este pack, ¡déjanos una reseña en Gumroad! 🚀
