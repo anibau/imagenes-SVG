@@ -12,7 +12,7 @@
 
 body {
   background-color: rgb(163, 154, 211);
-  font-size: 6px;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -20,6 +20,8 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
 }
 
